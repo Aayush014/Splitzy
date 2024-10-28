@@ -1,11 +1,9 @@
 import 'dart:developer';
 
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class GoogleAuthServices {
-  // Private constructor for singleton pattern
   GoogleAuthServices._();
 
   static final GoogleAuthServices googleAuthServices = GoogleAuthServices._();
@@ -19,7 +17,6 @@ class GoogleAuthServices {
           await googleSignIn.signIn();
 
       if (googleSignInAccount == null) {
-        Get.snackbar("Sign in Cancelled", "User cancelled Google Sign-in.");
         return 'Cancelled';
       }
 
@@ -36,10 +33,7 @@ class GoogleAuthServices {
       return 'Success';
     } catch (e) {
       if (e is FirebaseAuthException) {
-        Get.snackbar("Firebase Auth Failed", e.message ?? 'Unknown error');
-      } else {
-        Get.snackbar("Google Sign in Failed", e.toString());
-      }
+      } else {}
       log(e.toString());
       return 'Failed';
     }

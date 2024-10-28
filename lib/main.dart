@@ -15,6 +15,8 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  final themeController = Get.put(ThemeController());
+  await themeController.loadTheme();
   runApp(MyApp());
 }
 
@@ -34,10 +36,15 @@ class MyApp extends StatelessWidget {
         splitScreenMode: true,
         child: GetMaterialApp(
           debugShowCheckedModeBanner: false,
-          theme: themeController.isDark.value ? darkMode : lightMode,
+          themeMode: ThemeMode.system,
+          theme: themeController.currentTheme,
           home: const AuthGate(),
         ),
       ),
     );
   }
 }
+
+
+
+

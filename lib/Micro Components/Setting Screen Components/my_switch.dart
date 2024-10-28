@@ -18,7 +18,7 @@ class MySwitch extends StatelessWidget {
             () => Switch(
           thumbColor: WidgetStatePropertyAll(themeColor.surface),
           activeColor: themeColor.surface,
-          value: themeController.isDark.value,
+          value: themeController.isDarkMode.value,
           onChanged: (value) {
             themeController.toggleTheme();
           },

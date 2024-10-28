@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -11,8 +12,9 @@ class FloatingButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
+    return CupertinoButton(
+      padding: EdgeInsets.zero,
+      onPressed: onTap,
       child: Container(
         alignment: Alignment.center,
         height: 52.h,
@@ -24,7 +26,7 @@ class FloatingButton extends StatelessWidget {
         child: Text(
           text,
           style:
-          GoogleFonts.playfair(fontSize: 20.sp, fontWeight: FontWeight.bold),
+          GoogleFonts.playfair(fontSize: 20.sp, fontWeight: FontWeight.bold,color: themeColor.tertiary),
         ),
       ),
     );

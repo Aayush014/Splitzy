@@ -14,6 +14,7 @@ class SignInScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.primary,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -47,13 +48,13 @@ class SignInScreen extends StatelessWidget {
               height: 20.h,
             ),
             SignInButton(
-              width: 220.h,
+              width: 250.h,
               buttonType: ButtonType.google,
               onPressed: () async {
                 String status = await GoogleAuthServices.googleAuthServices
                     .signInWithGoogle();
                 if (status == 'Success') {
-                  Get.offAll( HomeScreen());
+                  Get.offAll( const HomeScreen());
                 }
               },
               btnColor: Colors.black,

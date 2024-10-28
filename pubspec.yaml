@@ -44,6 +44,10 @@ dependencies:
   google_sign_in: any
   buttons_tabbar: any
   cloud_firestore: any
+  flutter_svg: ^2.0.10+1
+  fluttertoast: ^8.2.8
+  url_launcher: ^6.3.1
+  shared_preferences: ^2.3.2
 
 
 dev_dependencies:
