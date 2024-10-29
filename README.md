@@ -112,6 +112,7 @@ Here's a glimpse of Splitzy in action:
   </p>
   </details>
 
+   [App Video](https://drive.google.com/file/d/1PFCob3TRbOtnB5hHCKWBbruIEQIEoHUL/view?usp=sharing)
 
 ### **User Flow & Presentation**  
 For a detailed overview of Splitzy's user flow and key functionalities, check out the following resources:  
@@ -138,4 +139,7 @@ For a detailed overview of Splitzy's user flow and key functionalities, check ou
 ---
 
 ### **Download Splitzy Now!**  
-Take the hassle out of group expenses. Download **Splitzy** today and focus on what truly matters—having fun!  
+  [Splitzy App Download](https://drive.google.com/file/d/1YRJtNtcByXcE_4YwFRwMOYSCYZE47Vrl/view?usp=sharing)
+#### Take the hassle out of group expenses. Download **Splitzy** today and focus on what truly matters having fun!  
+
+  [Rate this App](https://forms.gle/nCBCAQtUadBmYtJn9)
